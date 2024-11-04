@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "684096295074",
+    "project_id": "kmp-chat-cfbdf",
+    "storage_bucket": "kmp-chat-cfbdf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684096295074:android:16df18ea411fdb5841c7fb",
+        "android_client_info": {
+          "package_name": "com.github.italord0"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp6KUyUckKsb3T5zHClcqjob8aeZVzLpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
