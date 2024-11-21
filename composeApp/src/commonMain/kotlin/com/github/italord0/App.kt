@@ -15,6 +15,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.github.italord0.data.Message
@@ -38,14 +39,16 @@ fun App() {
     var userNameTextField by remember { mutableStateOf("") }
 
     if (userName.isEmpty()) {
-        Column {
-            Text("Enter Name :")
+        Column(Modifier.fillMaxSize().padding(16.dp)) {
+            Text(modifier = Modifier.fillMaxWidth(), text = "Enter Name :", textAlign = TextAlign.Center)
             TextField(
+                modifier = Modifier.align(Alignment.CenterHorizontally),
                 value = userNameTextField,
                 onValueChange = { userNameTextField = it },
                 placeholder = { Text("Enter your name") },
             )
             Button(
+                modifier = Modifier.align(Alignment.CenterHorizontally),
                 onClick = {
                     userName = userNameTextField
                 }
